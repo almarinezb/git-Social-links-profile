@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+    
+    text-align: center;
+}
+.container{
+    background-color: var(--Grey-800);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center; /* Center text inside the container */
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-height: 550px;
+}
+
+.location{
+    color: var(--Green);
+    
+}
+.icon{
+    
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 25px auto 20px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+.name{
+    color: var(--White);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.title{
+    font-size: 14px;
+    color: var(--White);
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.location{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.buttons{
+    display:flex;
+    
+    justify-content: center;
+    flex-direction:column;
+    gap: 15px;
+    margin: 25px;
+}
+
+.buttons button{
+    padding: 15px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    transition: 0.3s ease;
+}
+
+.buttons button:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
